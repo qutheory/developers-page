@@ -35,8 +35,7 @@
               {
                 headline: 'Official Insomnia Collection',
                 text: 'Insomnia collection for easy test against the API',
-                tag: '#insomnia',
-                link: 'https://github.com'
+                tag: '#insomnia'
               }
             ]
           }
