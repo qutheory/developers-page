@@ -157,10 +157,20 @@
         computed: {
             sampleCode() {
                 return `
-${KEYWORDS.IMPORT} Clients
-
-${KEYWORDS.LET} token: String = ${this.string('"MyToken"')}
-${KEYWORDS.LET} application = ${this.type('ClientApplication')}(token: token)
+~ $ curl --request POST \\
+  --url https://api-new.v2.vapor.cloud/v1/application \\
+  --header 'authorization: Bearer MY_TOKEN' \\
+  --header 'content-type: application/json' \\
+  --data '{
+	"project": {
+		"id": "PROJECT_ID"
+	},
+	"repoName": "my-application",
+	"name": "My Application",
+	"environment": {
+		"name": "production"
+	}
+}'
                 `;
             }
         },

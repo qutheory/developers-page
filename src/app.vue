@@ -10,6 +10,7 @@
 
 <style lang="scss">
 a:link { text-decoration: none;}
+.router-link-active { color:#FFF; }
 </style>
 
 <script>

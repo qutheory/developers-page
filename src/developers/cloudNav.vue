@@ -2,7 +2,7 @@
   <nav class="flex items-center justify-between flex-wrap bg-grey-darkest p-6">
     <div class="flex items-center flex-no-shrink text-white mr-6">
       <img src="https://dashboard.vapor.cloud/images/cloud-gray.svg" style="margin-right:20px;" />
-      <span class="font-semibold text-xl tracking-tight">Vapor Cloud</span>
+      <span class="font-semibold text-xl tracking-tight">Vapor Cloud | Developer Portal</span>
     </div>
     <div class="block lg:hidden">
       <button class="flex items-center px-3 py-2 border rounded text-teal-lighter border-teal-light hover:text-white hover:border-white">
@@ -16,14 +16,17 @@
       <div>
         <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
           <div class="text-xl lg:flex-grow">
-            <router-link :to="{ name: 'home' }" class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white mr-4">
+            <router-link :to="{ name: 'home' }" exact class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white mr-4">
               home
             </router-link>
-            <router-link :to="{ name: 'api' }" class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white mr-4">
-              api
+            <router-link :to="{ name: 'guide' }" class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white mr-4">
+              guides
             </router-link>
             <router-link :to="{ name: 'libraries' }" class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white mr-4">
               libraries
+            </router-link>
+            <router-link :to="{ name: 'api' }" class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white mr-4">
+              api docs
             </router-link>
           </div>
         </div>
