@@ -6,11 +6,11 @@
 </template>
 
 <script>
-    import guide from 'components/guide'
-    export default {
-        name: 'guidePage',
-        components: {
-            [guide.name]: guide
-        }
+import guide from 'components/guide'
+export default {
+    name: 'guidePage',
+    components: {
+        [guide.name]: guide
     }
+}
 </script>

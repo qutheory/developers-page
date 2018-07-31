@@ -37,7 +37,7 @@
 
 <script>
     export default {
-        name: 'cloudNav',
+        name: 'navigation',
         components: {}
     };
 </script>
