@@ -8,8 +8,9 @@ RUN npm run build
 
 # production stage
 FROM nginx:1.13.12-alpine as production-stage
-COPY --from=build-stage /app/dist /usr/share/nginx/html
+COPY --from=build-stage /app/dist /usr/share/nginx/html/dist
 COPY --from=build-stage /app/index.html /usr/share/nginx/html
-COPY --from=build-stage /app/public /usr/share/nginx/html
+COPY --from=build-stage /app/public /usr/share/nginx/html/public
+RUN chmod nginx:nginx /usr/share/nginx/html/
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
